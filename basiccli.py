@@ -1,8 +1,8 @@
-#!/usr/bin/python
 import http.client
-x=http.client.HTTPConnection('www.ruby-lang.org',80)
+x=http.client.HTTPConnection("http://classdata.readthedocs.io/en/latest/section.html",80)
 x.connect()
-x.request('GET','/index.html')
+x.request('GET','/section.html')
 y=x.getresponse()
 z=y.read()
 print (z)
+
